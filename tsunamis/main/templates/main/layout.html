@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/img/page_logo.png'  %}" />
+</head>
+<body>
+    <div class="wrapper">
+    <header class="navbar">
+        <ul>
+            <li><a id="logo" href="/"><img src="{% static 'main/img/logo.png' %}" alt="logo" class="logo"></a></li>
+            <li><a href="">Записаться в группу</a></li>
+            <li><a href="profile/signin">Дневник</a></li>
+
+        </ul>
+    </header>
+    <div class="content">{% block content %}{% endblock %}</div>
+    <footer class="footer">
+        <ul>
+            <li>Цунамис 2022-2024</li>
+            <li>musatov.alexey@gmail.com</li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>

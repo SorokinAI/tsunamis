@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Вход в дневник{% endblock %}
+{% block content %}
+<div class="register">
+    <h1>Войдите!</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.name }}<br>
+        {{ form.surname }}<br>
+        {{ form.password }}<br>
+        <input type="submit" class="btn-success" value="Войти"><br>
+        <span style="color: #DC143C;">{{ error }}</span>
+    </form>
+</div>
+{% endblock %}

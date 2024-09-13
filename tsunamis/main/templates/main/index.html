@@ -1,0 +1,41 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+    <h1>Что такое Цунамис?</h1>
+    <div class="senc">
+        <div>
+        <h2>Цунамис - это <b class="handsome-text">команда,</b> которая<br>всегда поможет друг-другу</h2>
+        <p>В Цунамис очень дружный коллектив, <br>где все друг-друга <b class="handsome-text-small">уважают, любят и ценят!</b>
+        <br>без ссор, драк и разногласий</p></div>
+        <img src="{% static 'main/img/home/photo_1.jpg' %}">
+        <div class="senc-quote"><b class="handsome-text">Вместе</b><br>на тренировках,<br>на соревнованиях,<br>на сборах,<br>в воде,<br><b class="handsome-text">везде!</b></div>
+    </div>
+
+    <h1>Разные группы Цунамис</h1>
+    <div class="senc" style="justify-content: center;">
+        <div>
+            <div>
+                <h2>Младшая группа</h2>
+                <p>Самые маленькие, которые<br>только учатся не тонуть</p>
+            </div>
+            <div>
+                <h2>Средняя группа</h2>
+                <p>Ребята, которые не идут<br>ко дну и учаться плавать</p>
+            </div>
+        </div>
+        <div id="group2">
+            <div>
+                <h2>Группа профи</h2>
+                <p>Ребята, которые хорошо<br>плавают и начинаюn<br>выступать на соревнованиях</p>
+            </div>
+            <div>
+                <h2>Группа KRAKEN</h2>
+                <p>Знакомтесь, лучшие пловцы Цунамис.<br>8 усложнённых тренировок в неделю,<br>сборы, награды с соревнований</p>
+            </div>
+        </div>
+
+
+
+    </div>
+{% endblock %}
